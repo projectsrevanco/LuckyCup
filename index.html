@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCKY CUP</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+     <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+</head>
+<body>
+
+ <!-- Desktop Header -->
+<header class="custom-bg sticky-top d-none d-lg-block">
+  <div class="container">
+    <!-- Row 1: Logo + Top Bar -->
+    <div class="row align-items-center">
+      <!-- Logo -->
+      <div class="col-lg-3 text-start py-2">
+        <a class="navbar-brand" href="index.html">
+          <img src="../assets/images/logo.webp" alt="Lucky Cup Logo">
+        </a>
+      </div>
+        <!-- Top-bar -->
+        <div class="col-lg-9 text-end">
+            <div class="top-bar d-flex justify-content-end align-items-center gap-3">
+                <a href="mailto:support@luckycup.com"><i class="bi bi-envelope"></i> support@luckycup.com</a>
+                <a href="tel:+919876543210"><i class="bi bi-telephone"></i> +91 9876543210</a>
+            </div>
+
+        <!-- Row 2: Navbar -->
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <div class="collapse navbar-collapse justify-content-end" id="desktopNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Our Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+<!-- Mobile Header -->
+<header class="custom-bg sticky-top d-lg-none">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Logo -->
+      <div class="col-3 text-start">
+        <a class="navbar-brand" href="index.html">
+          <img src="../assets/images/logo.webp" alt="Lucky Cup Logo">
+        </a>
+      </div>
+
+      <!-- Top-bar stacked -->
+      <div class="col-6 text-left">
+        <div class="top-bar">
+          <a href="mailto:support@luckycup.com"><i class="bi bi-envelope"></i> support@luckycup.com</a>
+          <a href="tel:+919876543210"><i class="bi bi-telephone"></i> +91 9876543210</a>
+        </div>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="col-3 text-end">
+        <nav class="navbar navbar-dark p-0">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Collapsed Nav links -->
+    <div class="collapse navbar-collapse" id="mobileNav">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Our Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- Marquee -->
+<div class="marquee-bg">
+  <div class="marquee">
+    <div class="marquee-content">
+      <span class="text-welcome">🔔 Welcome to LuckyCup! Discover amazing rewards and surprises! 🔔</span>
+      <span class="text-hurry">Hurry up to win exclusive prizes and enjoy exciting experiences! 🎉</span>
+      <!-- Duplicate for seamless scroll -->
+      <span class="text-welcome">🔔 Welcome to LuckyCup! Discover amazing rewards and surprises! 🔔</span>
+      <span class="text-hurry">Hurry up to win exclusive prizes and enjoy exciting experiences! 🎉</span>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Hero Section -->
+<section class="hero">
+  <picture>
+    <!-- For large desktops -->
+    <source srcset="./assets/images/Banner_1920_500.webp" media="(min-width: 1440px)">
+    <!-- For tablets / medium screens -->
+    <source srcset="./assets/images/Banner_1024_320.webp" media="(min-width: 768px)">
+    <!-- For mobiles -->
+    <source srcset="./assets/images/Banner_640_500.webp" media="(max-width: 767px)">
+    
+    <!-- Fallback image -->
+    <img src="./assets/images/Banner.webp" alt="Painting Banner 1" class="hero-img">
+  </picture>
+
+  <!-- <div class="hero-content">
+    <h1>Every Sip <br/> could be your <br/> Lucky Ticket</h1>
+  </div> -->
+</section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about container">
+        <h2 class="section-title">ABOUT US</h2>
+        <div class="row align-items-center">
+            <div class="col-md-4 order-md-1">
+                <img src="../assets/images/about us.webp" alt="About Us">
+            </div>
+            <div class="col-md-8 order-md-2">
+                <p>At Lucky Cup, we believe every sip tells a story a story of joy, intention, and a little bit of luck. Born from the simple idea that your favorite cup should be more than just a vessel,we set out to create drinkware that inspires, uplifts, and becomes part of your daily ritual.</p>
+                <p>Crafted with care and designed to stand out, each Lucky Cup blends style,sustainability, and a sprinkle of good fortune. Whether it’s your morning coffee, afternoon tea, or a calming herbalbrew before bed, our cups are made to enhance every moment.</p>
+                <p>We don’t just make cups. We make Lucky Cups the kind you reach for again and again, the one that just feels right in your hand, and somehow, always makes your drink taste better. Drink happy. Sip lucky.</p>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="services container">
+  <h2 class="section-title">OUR SERVICES</h2>
+
+  <div class="services-content">
+    <div class="services-text">
+      <p>At Lucky Cup, we're more than just a cup brand we're your partner in creating meaningful sipping moments. Our services are designed to bring convenience, creativity, and a touch of luck to every cup you enjoy.</p>
+
+      <!-- Grouped in two divs for mobile layout splitting -->
+      <div class="text-block top">
+        <ul>
+          <li><strong>🍵 Premium Drinkware Collection</strong><br>From ceramic classics to modern insulated designs, we offer a curated range of cups and mugs that blend function, fashion, and feel-good energy.</li>
+          <li><strong>🎁 Custom & Corporate Gifting</strong><br>Make it personal. Whether you're celebrating a special occasion or looking for unique corporate gifts, we offer customization services to add names, logos, or lucky messages to your cups.</li>
+          <li><strong>🌿 Eco-Friendly Solutions</strong><br>Sip sustainably with our eco-conscious products. We’re committed to reducing waste with reusable, recyclable, and responsibly sourced materials.</li>
+        </ul>
+      </div>
+
+      <div class="text-block bottom">
+        <ul>
+          <li><strong>🚚 Fast & Friendly Delivery</strong><br>Your lucky moments shouldn’t have to wait. Enjoy quick, reliable shipping — with love and care in every package.</li>
+          <li><strong>🎨 Design Collaborations</strong><br>We love partnering with artists, brands, and dreamers. Let’s co-create limited-edition cups that tell a story and spark joy.</li>
+          <li><strong>⭐ Lucky Loyalty Program</strong><br>Join the Lucky Club and earn rewards, early access to new drops, and exclusive perks made just for our loyal sippers.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="services-image">
+      <img src="../assets/images/services.webp" alt="Lucky Cup Services Image" />
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Lucky Offer Section -->
+<section id="lucky-offer" class="lucky-offer">
+  <div class="offer-container">
+    <h2 class="section-title">LUCKY OFFER DETAILS</h2>
+    <div class="row align-items-center">
+      
+      <!-- Text Column -->
+      <div class="col-md-6">
+        <div class="offer-text">
+          <p>💥 “One small step… towards Big fortune!”💥</p>
+          <p> This is not just another offer — it’s a once-in-a-lifetime chance to win BIG as part of the Lucky Cup Brand Promotion Celebration! </p>
+          <p> Every Indian citizen now has an exclusive opportunity to participate in our Special Lucky Draw for just ₹1999.</p>
+          <p><strong>How to Participate:</strong></p>
+          <ol>
+            <li>Purchase a Lucky Cup — Just ₹1999</li>
+            <li>Get Your Digital Ticket instantly on WhatsApp</li>
+            <li>Receive a Hard Copy Ticket + Special Lucky Cup at your doorstep via courier</li>
+            <li>Stay Updated — We will send you the draw date and time on WhatsApp</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-md-6 text-center">
+        <img src="../assets/images/lucky.webp" alt="Lucky Offer">
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Prizes Section -->
+<section id="prizes" class="prizes-section">
+  <div class="container text-center">
+    <h2 class="section-title">PRIZES</h2>
+    <div class="row justify-content-center">
+
+      <!-- Prize 1 -->
+      <div class="col-md-4 col-12 prize-item">
+        <img src="../assets/images/prize1.webp" alt="Flat Prize">
+        <p><strong>1st Prize</strong><br>2BHK Flat in Rajahmundry<br>(1200 Sq.ft.)</p>
+      </div>
+
+      <!-- Prize 2 -->
+      <div class="col-md-4 col-12 prize-item">
+        <img src="../assets/images/prizeg.webp" alt="Gold Prize">
+        <p><strong>2nd Prize</strong><br>10 grams of Gold</p>
+      </div>
+
+      <!-- Prize 3 -->
+      <div class="col-md-4 col-12 prize-item">
+        <img src="../assets/images/prize3.webp" alt="Bike Prize">
+        <p><strong>3rd Prize</strong><br>Brand New 2 Wheeler</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="bonus-section">
+  <!-- Section 1: Bonus Prizes -->
+  <div class="section bonus-prizes">
+    <h2>🎖️ BONUS PRIZES</h2>
+    <p>💫 100 Lucky Winners will receive Silver gifts ranging from 10 grams to 1000 grams!<br>
+    Even more chances to win valuable prizes!</p>
+  </div>
+
+  <!-- Section 2: What You Get -->
+  <div class="section ticket-benefits">
+    <h3>WHAT YOU GET WITH EVERY TICKET</h3>
+    <ul>
+      
+      <li>Hard Copy Ticket + Special Edition Lucky Cup delivered directly to your home</li>
+      <li>Digital Ticket sent instantly via WhatsApp</li>
+      <li>Draw Date & Time sent personally through WhatsApp</li>
+    </ul>
+  </div>
+
+  <!-- Section 3: Important Note -->
+  <div class="section important-note">
+    <h2>IMPORTANT NOTE</h2>
+    <ul>
+      <li>This offer is valid for Indian residents only.</li>
+      <li>Lucky Draw will be conducted transparently, and winners will be announced publicly.</li>
+      <li>Shipping for the Lucky Cup is completely free.</li>
+      <li>All entries are automatically considered for the draw after ticket confirmation.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Terms & Conditions div -->
+ <!-- Section 4: Terms & Conditions -->
+<div class="section terms-conditions">
+  <h3>OUR TERMS & CONDITIONS</h3>
+  <ol>
+    <li>Each ticket is valid for one entry into the Lucky Cup raffle draw.</li>
+    <li>The ticket price of ₹1999 is non-refundable under any circumstances.</li>
+    <li>Winners will be chosen randomly and fairly on the official draw date.</li>
+    <li>Winners must present the original ticket and a valid ID to claim prizes.</li>
+    <li>Lost, stolen, or damaged tickets will not be replaced.</li>
+    <li>Taxes, registration fees, or any other expenses related to claiming prizes are the winner's responsibility.</li>
+    <li>By purchasing a ticket, participants agree to these terms and conditions.</li>
+  </ol>
+</div>
+
+    <!-- Contact us Section -->
+     <section class="contact-section" id="contact">
+    <h3>CONTACT US</h3>
+  <div class="contact-container">
+    <!-- Left Side: Contact Info -->
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Say something to start a live chat!</p>
+
+      <div class="info-item"><i class="fas fa-phone"></i> +91 9876543210</div>
+      <div class="info-item"><i class="fas fa-envelope"></i> support@luckycup.com</div>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i> D.no:-304-2, Main Road, Rajahmundry,<br>Andhra Pradesh – 543210</div>
+
+      <!-- Social Icons -->
+        <div class="social-icons-wrapper-contact">
+            <div class="social-icons-contact">
+                <a class="social-list__links-contact" target="_blank" href="https://wa.me/message/3MNRWMQLDOFTG1"><i class="fab fa-whatsapp"></i></a>
+                <a class="social-list__links-contact" target="_blank" href="https://www.facebook.com/profile.php?id=61580482907550"><i class="fab fa-facebook"></i></a>
+                <a class="social-list__links-contact" target="_blank" href="https://www.instagram.com/luc_kycup/"><i class="fab fa-instagram"></i></a>
+                <a class="social-list__links-contact" target="_blank" href="mailto:luckycuprjy@gmail.com"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+        <!-- Decorative Circles -->
+      <div class="circle-decor"></div>
+      <div class="circle-decor small"></div>
+    </div>
+
+     <!-- Right Side: Contact Form -->
+<div class="contact-form my-2 px-2">
+  <form action="sendmail.php" method="POST" class="contact-form-layout">
+  <!-- Row 1: First & Last Name -->
+  <div class="form-row">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input id="firstName" name="firstName" type="text" required/>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input id="lastName" name="lastName" type="text" required/>
+    </div>
+  </div>
+
+  <!-- Row 2: Email & Phone -->
+  <div class="form-row">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required/>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input id="phone" name="phone" type="text" required/>
+    </div>
+  </div>
+
+  <!-- Row 3: Message -->
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message"></textarea>
+  </div>
+
+  <!-- Submit -->
+  <div class="form-submit">
+    <button type="submit">Send Message</button>
+    <img src="./assets/images/send_Arrow.png" alt="Send" />
+  </div>
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- QR Div -->
+ <!-- Section 5: QR Participation -->
+<div class="section qr-section">
+  <h3>SCAN & PARTICIPATE</h3>
+  <img src="../assets/images/qr_download.png" alt="QR Code" class="qr-image">
+  <p class="qr-text"> Test Your Luck by Scanning</p>
+</div>
+
+
+    <!-- Footer -->
+<footer class="footer-section text-white pt-5 pb-3 position-relative">
+  <div class="custom-footer-bg"></div>
+  <div class="container position-relative">
+    
+    <!-- FIRST ROW -->
+    <div class="row text-center text-md-start gy-4 align-items-start">
+      
+      <!-- Column 1: Logo + About (except last line) -->
+      <div class="col-12 col-md-6">
+        <img src="./assets/images/logo.webp" alt="Logo" class="mb-3" />
+        <p class="fw-bold mb-4">About Lucky Cup</p>
+        <p class="mb-2" style="font-size: 0.95rem;">
+          Elevating Everyday Moments with Lucky Cup.</p>
+          <p> Expertly crafted cups, premium materials, and a flawless finish.
+
+        </p>
+        
+      </div>
+
+      <!-- Column 2: Explore Services -->
+      <div class="col-12 col-md-3">
+        <h6 class="fw-bold text-white mt-5 mb-3">Explore Services</h6>
+        <ul class="list-unstyled">
+          <li><a href="aboutus.html" class="text-white text-decoration-none d-block mb-2">About Us</a></li>
+          <li><a href="services.html" class="text-white text-decoration-none d-block mb-2">Our Services</a></li>
+          <li><a href="luckyoffers.html" class="text-white text-decoration-none d-block mb-2">Lucky Offers</a></li>
+          <li><a href="contactus.html" class="text-white text-decoration-none d-block mb-2">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Useful Links -->
+      <div class="col-12 col-md-3">
+        <h6 class="fw-bold text-white mt-5 mb-3">Useful Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="aboutservices.html" class="text-white text-decoration-none d-block mb-2">About Services</a></li>
+          <li><a href="termsandconditions.html" class="text-white text-decoration-none d-block mb-2">Terms and Conditions</a></li>
+          <li><a href="privacypolicy.html" class="text-white text-decoration-none d-block mb-2">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECOND ROW -->
+    <div class="row text-center text-md-start align-items-center gy-4">
+      <!-- Column 1: Last line of about -->
+      <div class="col-12 col-md-6">
+        <p style="font-size: 0.95rem;">
+          Trusted for quality, timely delivery, and affordable luxury.
+        </p>
+      </div>
+
+      <!-- Column 2: Follow Us Button & Icons -->
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <div class="footer-follow-us">
+          <div class="follow-button"><a href="socialmedia.html">Follow Us</a></div>
+            <div class="social-icons-wrapper">
+                <div class="social-icons">
+                  <a class="social-list__links" target="_blank" href="https://wa.me/message/3MNRWMQLDOFTG1"><i class="fab fa-whatsapp"></i></a>
+                  <a class="social-list__links" target="_blank" href="https://www.facebook.com/profile.php?id=61580482907550"><i class="fab fa-facebook"></i></a>
+                  <a class="social-list__links" target="_blank" href="https://www.instagram.com/luc_kycup/"><i class="fab fa-instagram"></i></a>
+                  <a class="social-list__links" target="_blank" href="mailto:luckycuprjy@gmail.com"><i class="far fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    <!-- COPYRIGHT -->
+    <div class="text-center mt-4">
+      <div class="copyright bg-light text-black py-2 rounded-pill d-inline-block px-4 small">
+        © 2025. All rights reserved to Lucky Cup.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-float" onclick="openWhatsApp()">
+  <i class="fab fa-whatsapp"></i>
+  <span class="whatsapp-text">Message Us</span>
+</div>
+
+<script>
+  function openWhatsApp() {
+    window.open("https://wa.me/message/3MNRWMQLDOFTG1", "_blank");
+  }
+</script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
